@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+      <li><a href="#" onclick="toggleMenu();">Home</a></li>
+      <li><a href="#" onclick="toggleMenu();">About</a></li>
+      <li><a href="#" onclick="toggleMenu();">Training</a></li>
+      <li><a href="#" onclick="toggleMenu();">Team</a></li>
+      <li><a href="#" onclick="toggleMenu();">Contact</a></li>
+    </ul>
+    </div>
+    <section class="Banner">
+      <header>
+        <h2 class="logo">Your Logo</h2>
+        <div class="toggle" onclick="toggleMenu();"></div>
+      </header>
+      <video src="production ID_4753946.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Stay Strong</h2>
+        <h3>Never Give Up</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur id recusandae. Fuga illum, quo odio minus distinctio necessitatibus harum tempora laudantium eos? Delectus odit itaque illum labore qui recusandae nulla voluptatum iure accusantium.</p>
+        <a href="#">Join us</a>
+      </div>
+      <div class="pic">
+        <img src="Images/twitter.png alt="">
+      </div>
+      <ul class="links">
+        <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+      </ul>
+    </section>
+    <script>
+    function toggleMenu(){
+        var menutoggle = document.querySelector('.toggle');
+        var Banner = document.querySelector('.Banner');
+        menutoggle.classList.toggle('active');
+        Banner.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
